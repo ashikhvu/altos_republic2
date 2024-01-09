@@ -288,7 +288,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #189aa6;
+  color: rgb(225, 135, 51);
 }
 
 .navbar .dropdown ul {
@@ -1911,7 +1911,7 @@ color: #ffc451;
 }
 
 #footer .footer-top .footer-links ul a:hover {
- color: #0fa49b;
+ color: rgb(255, 111, 0);
 }
 
 #footer .footer-top .footer-newsletter form {

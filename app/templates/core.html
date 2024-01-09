@@ -100,7 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <style>
 
   #navbar .cor{
-    color: #189aa6;
+    color: rgb(255, 128, 10);
     font-weight: 800;
   }
   .container-fluid
@@ -201,14 +201,15 @@ h5 {
     overflow: hidden;
     top: 0;
     right: 0;
-    background-color: #00838d;
+    background: linear-gradient(135deg,rgb(255, 81, 0),white,green);
     border-radius: 0 4px 0 32px;
+    box-shadow: 2px 2px 3px 3px black;
   }
   
   .go-arrow {
     margin-top: -4px;
     margin-right: -4px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: courier, sans;
   }
   
@@ -232,7 +233,8 @@ h5 {
       z-index: -1;
       top: -16px;
       right: -16px;
-      background: #00838d;
+      background-image: linear-gradient(135deg,rgb(255, 81, 0),white,green) ;
+      color: black;
       height: 32px;
       width: 32px;
       transform: scale(1);
@@ -247,11 +249,11 @@ h5 {
   
   .card1:hover p {
       transition: all 0.3s ease-out;
-      color: rgba(255, 255, 255, 0.8);
+      color: rgba(0, 0, 0, 0.8);
     }
     .card1:hover h5 {
       transition: all 0.3s ease-out;
-      color: #ffffff;
+      color: #000000;
     }
 
     .core-info 
@@ -450,14 +452,71 @@ h5 {
     }
 </style>
 
+<style>
+  .top_flag{
+    margin-top: -1.6rem;
+  }
+  @media screen and (max-width:240px) {
+    #footer_decor{
+      width: 5rem;
+    }
+    .footer_decor_top{
+      margin-top: -12.2rem;
+    }
+  }
+  @media screen and (min-width:241px) and (max-width:367px) {
+    #footer_decor{
+      width: 10rem;
+    }
+    .footer_decor_top{
+      margin-top: -15.2rem;
+    }
+  }
+  @media screen and (min-width:368px) and (max-width:429px) {
+    #footer_decor{
+      width: 10rem;
+    }
+    .footer_decor_top{
+      margin-top: -14rem;
+    }
+  }
+  @media screen and (min-width:430px) {
+    #footer_decor{
+      width: 19rem;
+    }
+    .footer_decor_top{
+      margin-top: -21.2rem;
+    }
+  }
+</style>
+
  <!-- ======= Header ======= -->
- <header id="header" class="fixed-top green-blue">
+ <header id="header" class="fixed-top green-blue pb-0" style="padding-top: 1.5rem;background-color: rgba(0, 0, 0, 0.425);">
+
+  <div class="position-relative" style="z-index: 998;">
+    <div class="position-absolute start-0 top-0 top_flag">
+      <div class="d-flex">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+      </div>
+    </div>
+  </div>
   <div class="container d-flex align-items-center justify-content-lg-between">
 
     <h1 class="logo me-auto me-lg-0">
       <a href="{% url 'text_page' %}">
         <!-- <video src="static/img/logo.mp4"></video> -->
-        <img src="{% static 'img/lg1.gif' %}" class="" alt="Logo Gif">
+        <img src="{% static 'republic/gif/lg2.gif' %}" class="" alt="Logo Gif">
       
       </a>
     </h1> 
@@ -492,19 +551,19 @@ h5 {
           <div class="content-boxs border-0 rounded-4">
             <h2>ERP </h2>
             <div class="img-box-tech image-hidden">
-              <img src="static/img/team/erp.png" alt="ERP" />
+              <img src="static/republic/img/erp.png" alt="ERP" />
             </div>
           <p>Accounting, inventory management, customer relationship management, 
             and other modules are all included in our ERP system. Together, these modules give you a complete picture of your company's operations, including its finances, customer interactions, and everything in between. Additionally, our software may be modified to meet the particular requirements of your company, ensuring that it is adapted to your particular industry and demands.</p>
             <p>Moreover, your staff will have no trouble using and navigating our ERP software because of its user-friendly design. With the help of our software, you may automate routine processes, lower error rates, and boost productivity.
           </p>
           </div>
-          <div class="km-button my-5"><a role="button" href="/contact" class="knowmore-button text-white">Know More</a></div>
+          <div class="km-button my-5"><a role="button" href="/contact" class="knowmore-button text-dark" style="background-image: linear-gradient(135deg,rgb(255, 81, 0),white,green);">Know More</a></div>
         </div>
         <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center">
           <div class="img-box-tech image-visible">
             <!-- <h4 class="hide-head">ERP</h4> -->
-            <img src="static/img/team/erp.png" alt="ERP" />
+            <img src="static/republic/img/erp.png" alt="ERP" />
           </div>
         </div>
         <!-- <div class="col-lg-6 col-sm-12 col-md-6">
@@ -545,14 +604,14 @@ h5 {
         <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center">
           <div class="img-box-tech image-visible">
             <!-- <h4 class="hide-head">CRM</h4> -->
-            <img src="static/img/team/crm.png" alt="CRM" />
+            <img src="static/republic/img/crm.png" alt="CRM" />
           </div>
         </div>
         <div class="col-lg-6 col-sm-12 col-md-6 px-3">
           <div class="content-boxs border-0 rounded-4">
           <h2>CRM </h2>
           <div class="img-box-tech image-hidden">
-            <img src="static/img/team/crm.png" alt="CRM" />
+            <img src="static/republic/img/crm.png" alt="CRM" />
           </div>
           <p>We recognise that each business is different and that commercial CRM 
             software might not always meet your organization's precise demands and objectives. 
@@ -568,7 +627,7 @@ h5 {
             
           </p>
           </div>
-          <div class="km-button my-4"><a role="button" href="/contact" class="knowmore-button text-white">Know More</a></div>
+          <div class="km-button my-4"><a role="button" href="/contact" class="knowmore-button text-dark" style="background-image: linear-gradient(135deg,rgb(255, 81, 0),white,green);">Know More</a></div>
         </div>
       </div>
     </div>
@@ -791,7 +850,7 @@ h5 {
         <div class="content-boxs border-0 rounded-4">
           <h2>HRMS  </h2>
           <div class="img-box-tech image-hidden">
-            <img src="static/img/team/hrms.png" alt="HRMS" />
+            <img src="static/republic/img/hrms.png" alt="HRMS" />
           </div>
         <p>Our HRMS software includes modules for employee records management, benefits administration, 
           payroll management, performance management, and more. These modules work together to provide a 
@@ -812,12 +871,12 @@ h5 {
           their employment information.
         </p>
         </div>
-        <div class="km-button my-4"><a role="button" href="/contact" class="knowmore-button text-white">Know More</a></div>
+        <div class="km-button my-4"><a role="button" href="/contact" class="knowmore-button text-dark" style="background-image: linear-gradient(135deg,rgb(255, 81, 0),white,green);">Know More</a></div>
       </div>
       <div class="col-lg-5 col-sm-12 col-md-5 px-4 d-flex align-items-center">
         <div class="img-box-tech image-visible">
           <!-- <h4 class="hide-head">ERP</h4> -->
-          <img src="static/img/team/hrms.png" alt="HRMS" />
+          <img src="static/republic/img/hrms.png" alt="HRMS" />
         </div>
       </div>
       <!-- <div class="col-lg-6 col-sm-12 col-md-6">
@@ -902,14 +961,14 @@ h5 {
       <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center">
         <div class="img-box-tech image-visible">
           <!-- <h4 class="hide-head">ERP</h4> -->
-          <img src="static/img/team/account.png" alt="ACCOUNTING" />
+          <img src="static/republic/img/account.png" alt="ACCOUNTING" />
         </div>
       </div>
       <div class="col-lg-6 col-sm-12 col-md-6 px-1">
         <div class="content-boxs border-0 rounded-4">
         <h2>Accounting software  </h2>
         <div class="img-box-tech image-hidden">
-          <img src="static/img/team/account.png" alt="ACCOUNTING" />
+          <img src="static/republic/img/account.png" alt="ACCOUNTING" />
         </div>
         <p>The software we provide for accounting includes modules 
           that deal with invoices, payments, and receivables along with 
@@ -930,7 +989,7 @@ h5 {
 
         </p>
         </div>
-        <div class="km-button my-4"><a role="button" href="/contact" class="knowmore-button text-white">Know More</a></div>
+        <div class="km-button my-4"><a role="button" href="/contact" class="knowmore-button text-dark" style="background-image: linear-gradient(135deg,rgb(255, 81, 0),white,green);">Know More</a></div>
       </div>
       <!-- <div class="col-lg-6 col-sm-12 col-md-6">
         <div class="content-boxs">
@@ -1061,6 +1120,60 @@ h5 {
 </div>
 
 <!-- ======= Footer ======= -->
+
+<div class="d-flex" style="overflow: auto;background-color: #151515">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+</div>
+
 <footer id="footer">
   <div class="footer-top">
     <div class="container">
@@ -1128,6 +1241,12 @@ h5 {
     </div>
   </div>
 </footer><!-- End Footer -->
+
+<div class="position-relative">
+  <div class="position-absolute end-0 footer_decor_top">
+    <img id="footer_decor" draggable="false" src="{% static 'republic/bg/republic_bg.png' %}" alt="">
+  </div>
+</div>
 
 <!-- <div id="preloader"></div> -->
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

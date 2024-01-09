@@ -98,13 +98,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <body>
   
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top green-blue">
+    <header id="header" class="fixed-top green-blue pb-0" style="padding-top: 1.5rem;background-color: rgba(0, 0, 0, 0.425);">
+
+      <div class="position-relative" style="z-index: 998;">
+        <div class="position-absolute start-0 top-0 top_flag">
+          <div class="d-flex">
+            <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+            <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+            <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+            <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+            <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+            <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+            <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+            <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+            <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+            <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+            <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+            <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+          </div>
+        </div>
+      </div>
       <div class="container d-flex align-items-center justify-content-lg-between">
   
         <h1 class="logo me-auto me-lg-0">
           <a href="{% url 'text_page' %}">
             <!-- <video src="static/img/logo.mp4"></video> -->
-            <img src="{% static 'img/lg1.gif' %}" class="" alt="Logo Gif">
+            <img src="{% static 'republic/gif/lg2.gif' %}" class="" alt="Logo Gif">
           <!-- <img src="static/img/logo-icon.png" class="">
           <span class="first-span">ALTOS Technologies</span>  -->
           </a>
@@ -138,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
  
   #navbar .cors{
-    color: #189aa6;
+    color: rgb(255, 128, 10);
     font-weight: 800;
   }
 
@@ -273,7 +292,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   margin: 0;
   width:100%;
   height: 100%;
-  background: linear-gradient(102.57deg,#dc0916,#f41fd6 100%,#f41fd6 0);
+  background: linear-gradient(90deg,#dc5d09,#ffffff,#51f41f);
   border-radius: 1.625rem;
   transition: all 0.4s ease-in-out;
   text-align: center;
@@ -358,6 +377,89 @@ font-size: 0.91.5em;
 
 </style>
 
+<style>
+  .top_flag{
+    margin-top: -1.6rem;
+  }
+  @media screen and (max-width:240px) {
+    #footer_decor{
+      width: 5rem;
+    }
+    .footer_decor_top{
+      margin-top: -12.2rem;
+    }
+  }
+  @media screen and (min-width:241px) and (max-width:367px) {
+    #footer_decor{
+      width: 10rem;
+    }
+    .footer_decor_top{
+      margin-top: -15.2rem;
+    }
+  }
+  @media screen and (min-width:368px) and (max-width:429px) {
+    #footer_decor{
+      width: 10rem;
+    }
+    .footer_decor_top{
+      margin-top: -14rem;
+    }
+  }
+  @media screen and (min-width:430px) {
+    #footer_decor{
+      width: 19rem;
+    }
+    .footer_decor_top{
+      margin-top: -21.2rem;
+    }
+  }
+  @media screen and (max-width:1000px) {
+    .happy_republic{
+      padding-left: 10rem;
+      padding-top: 1rem; 
+      width: 30rem;
+    }
+  }
+  @media screen and (min-width:1001px) {
+    .happy_republic{
+      padding-left: 10rem;
+      padding-top: 1rem; 
+      /* width: 30rem; */
+    }
+  }
+  @media screen and (max-width:932px) {
+    .display_rep1{
+      display: none;
+    }
+    .display_rep2{
+      display: block;
+    }
+  }
+  @media screen and (min-width:933px) {
+    .display_rep1{
+      display: block;
+    }
+    .display_rep2{
+      display: none;
+    }
+  }
+  @media screen and (max-width:540px) {
+    .happy_republic2{
+      width: 20rem;
+    }
+  }
+  @media screen and (max-width:330px) {
+    .happy_republic2{
+      width: 15rem;
+    }
+  }
+  @media screen and (max-width:250px) {
+    .happy_republic2{
+      width: 7rem;
+    }
+  }
+</style>
+
 <div class="container-fluid">
 
  
@@ -393,7 +495,7 @@ font-size: 0.91.5em;
               <a class="req-btn" data-bs-toggle="modal" data-bs-target="#apply" href="#">
               
                 <span class="circle">
-                  <span class="icon arrow">Join With Us</span>
+                  <span class="icon arrow text-dark">Join With Us</span>
                 </span>
               
               </a>  
@@ -403,6 +505,14 @@ font-size: 0.91.5em;
          
            
           </div>
+        </div>
+
+        <div class="display_rep1">
+          <img class="happy_republic" draggable="false" src="{% static 'republic/decor/about_design.png' %}" alt="">
+        </div>
+
+        <div class="text-center display_rep2">
+          <img class="happy_republic2" draggable="false" src="{% static 'republic/decor/about_design.png' %}" alt="">
         </div>
         
       </div>
@@ -1138,7 +1248,58 @@ position:relative
 {% endfor %}
 <!-- Central Modal Medium Success-->
 
-
+<div class="d-flex" style="overflow: auto;background-color: #151515">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+</div>
 
 <footer id="footer">
   <div class="footer-top">
@@ -1215,6 +1376,12 @@ position:relative
     </div>
   </div>
 </footer><!-- End Footer -->
+
+<div class="position-relative">
+  <div class="position-absolute end-0 footer_decor_top">
+    <img id="footer_decor" draggable="false" src="{% static 'republic/bg/republic_bg.png' %}" alt="">
+  </div>
+</div>
 
 <!-- <div id="preloader"></div> -->
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

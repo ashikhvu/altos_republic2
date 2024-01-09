@@ -76,6 +76,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     }
   </style>
+
+<style>
+  .top_flag{
+    margin-top: -1.6rem;
+  }
+  @media screen and (max-width:240px) {
+      #footer_decor{
+        width: 5rem;
+      }
+      .footer_decor_top{
+        margin-top: -12.2rem;
+      }
+    }
+    @media screen and (min-width:241px) and (max-width:367px) {
+      #footer_decor{
+        width: 10rem;
+      }
+      .footer_decor_top{
+        margin-top: -15.2rem;
+      }
+    }
+    @media screen and (min-width:368px) and (max-width:429px) {
+      #footer_decor{
+        width: 10rem;
+      }
+      .footer_decor_top{
+        margin-top: -14rem;
+      }
+    }
+    @media screen and (min-width:430px) {
+      #footer_decor{
+        width: 19rem;
+      }
+      .footer_decor_top{
+        margin-top: -21.2rem;
+      }
+    }
+</style>
+
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RLTXDEGMP"></script>
@@ -87,13 +126,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('config', 'G-3RLTXDEGMP');
 </script>
 <!-- ======= Header ======= -->
-<header id="header" class="fixed-top green-blue">
+<header id="header" class="fixed-top green-blue pb-0" style="padding-top: 1.5rem;background-color: rgba(0, 0, 0, 0.425);">
+
+  <div class="position-relative" style="z-index: 998;">
+    <div class="position-absolute start-0 top-0 top_flag">
+      <div class="d-flex">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+      </div>
+    </div>
+  </div>
+
   <div class="container d-flex align-items-center justify-content-lg-between">
 
     <h1 class="logo me-auto me-lg-0">
       <a href="{% url 'text_page' %}">
         <!-- <video src="static/img/logo.mp4"></video> -->
-        <img src="{% static 'img/lg1.gif' %}" class="" alt="Logo Gif">
+        <img src="{% static 'republic/gif/lg2.gif' %}" class="" alt="Logo Gif">
         <!-- <img src="static/img/logo-icon.png" class="">
       <span class="first-span">ALTOS Technologies</span>  -->
       </a>
@@ -126,7 +185,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=EB+Garamond&family=Heebo:wght@600;700&family=Montserrat&family=Mulish:wght@200&family=Poppins:wght@200;300&family=Raleway:wght@200&family=Work+Sans:wght@200&display=swap');
 
   #navbar .serv {
-    color: #189aa6;
+    color: rgb(255, 128, 10);
     font-weight: 800;
   }
 
@@ -309,6 +368,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <div class="box-service" style="height: 450px;">
             <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                  <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+                </div>
+              </div>
   
               <div class="icon"> <ion-icon name="search" style="color: #ffb700"></ion-icon></div>
               <h4 style="color: #ffb700">SEO Optimization</h4>
@@ -324,6 +389,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <div class="box-service" style="height: 450px;">
             <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                  <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+                </div>
+              </div>
+
               <div class="icon"> <i class="bx bx-tachometer" style="color: #ffb700"></i></div>
               <h4 style="color: #ffb700">Content Marketing</span> </h4>
               <p> Content marketing is a marketing strategy used to attract, engage, and retain an audience
@@ -337,6 +409,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <div class="box-service" style="height: 450px;">
             <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                  <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+                </div>
+              </div>
+
               <div class="icon"><ion-icon name="phone-portrait" style="color: #ffb700"></ion-icon></div>
   
               <h4 style="color: #ffb700">App store Optimization</span></h4>
@@ -351,6 +430,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
           <div class="box-service" style="height: 450px;">
             <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                  <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+                </div>
+              </div>
+
               <div class="icon"> <ion-icon name="archive" style="color: #ffb700"></ion-icon></div>
   
               <h4 style="color: #ffb700">Email Marketing</h4>
@@ -365,6 +451,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
           <div class="box-service" style="height: 450px;">
             <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                  <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+                </div>
+              </div>
+
               <div class="icon"> <ion-icon name="chatbox-outline" style="color: #ffb700"></ion-icon></div>
               <h4 style="color: #ffb700">SMS Marketing</span> </h4>
               <p>SMS is one of the most convenient channels for communicating
@@ -378,6 +471,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
           <div class="box-service" style="height: 450px;">
             <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                  <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+                </div>
+              </div>
+
               <div class="icon"> <ion-icon name="chatbubbles-outline" style="color: #ffb700"></ion-icon></div>
               <h4 style="color: #ffb700">WhatsApp Marketing</h4>
               <p> You can use it to send reminders about abandoned shopping carts,
@@ -391,6 +491,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
           <div class="box-service" style="height: 450px;">
             <div class="box-contents" style="height: 380px;">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                  <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+                </div>
+              </div>
+
               <div class="icon">
                 <ion-icon name="share-social-outline" style="color: #ffb700"></ion-icon>
               </div>
@@ -407,6 +514,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <div class="box-service" style="height: 450px;">
             <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                  <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+                </div>
+              </div>
+
               <div class="icon">
                 <ion-icon name="logo-linkedin" style="color: #ffb700"></ion-icon>
               </div>
@@ -422,6 +536,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           <div class="box-service" style="height: 450px;">
             <div class="box-contents" style="height: 380px;">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                  <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+                </div>
+              </div>
+
               <div class="icon">
                 <ion-icon name="logo-youtube" style="color:#ffb700"></ion-icon>
               </div>
@@ -438,6 +559,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <div class="box-service" style="height: 450px;">
             <div class="box-contents" style="height: 380px;">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                  <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+                </div>
+              </div>
+
               <div class="icon">
                 <ion-icon name="archive" style="color: #ffb700"></ion-icon>
               </div>
@@ -456,6 +584,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
           <div class="box-service" style="height: 450px;">
             <div class="box-contents" style="height: 380px;">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                  <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+                </div>
+              </div>
+
               <div class="icon">
                 <ion-icon name="grid" style="color:#ffb700"></ion-icon>
               </div>
@@ -621,6 +756,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="box-service" style="height: 450px;">
           <div class="box-contents" style="height: 380px;">
+
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+              </div>
+            </div>
+
             <div class="icon">
               <ion-icon name="grid" style="color:#ffb700"></ion-icon>
             </div>
@@ -637,6 +779,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="box-service" style="height: 450px;">
           <div class="box-contents" style="height: 380px;">
+
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+              </div>
+            </div>
+
             <div class="icon">
               <ion-icon name="grid" style="color:#ffb700"></ion-icon>
             </div>
@@ -655,6 +804,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="box-service" style="height: 450px;">
           <div class="box-contents" style="height: 380px;">
+
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+              </div>
+            </div>
+
             <div class="icon">
               <ion-icon name="grid" style="color:#ffb700"></ion-icon>
             </div>
@@ -674,6 +830,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="box-service" style="height: 450px;">
           <div class="box-contents" style="height: 380px;">
+
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+              </div>
+            </div>
+
             <div class="icon">
               <ion-icon name="cloud-done-outline" style="color:#ffb700"></ion-icon>
             </div>
@@ -694,6 +857,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="box-service" style="height: 450px;">
           <div class="box-contents" style="height: 380px;">
+
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+              </div>
+            </div>
+
             <div class="icon">
               <ion-icon name="analytics-outline" style="color:#ffb700"></ion-icon>
 
@@ -714,6 +884,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="box-service" style="height: 450px;">
           <div class="box-contents" style="height: 380px;">
+
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0" style="margin-top: -1rem;margin-left: -1.7rem;">
+                <img width="290rem" src="{% static 'republic/decor/frames/service/frame1.png' %}" alt="">
+              </div>
+            </div>
+            
             <div class="icon">
               <ion-icon name="logo-web-component" style="color:#ffb700"></ion-icon>
             </div>
@@ -1007,6 +1184,61 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- ======= Footer ======= -->
 <footer id="footer">
+  
+  <div class="d-flex" style="overflow: auto;background-color: #151515">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  </div>
+
+
   <div class="footer-top">
     <div class="container">
       <div class="row">
@@ -1084,6 +1316,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </div>
 </footer><!-- End Footer -->
+
+<div class="position-relative">
+  <div class="position-absolute end-0 footer_decor_top">
+    <img id="footer_decor" draggable="false" src="{% static 'republic/bg/republic_bg.png' %}" alt="">
+  </div>
+</div>
 
 <!-- <div id="preloader"></div> -->
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i

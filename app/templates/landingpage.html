@@ -450,12 +450,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         margin: 0;
         width: 100%;
         height: 2.5rem;
-        background: linear-gradient(
-          102.57deg,
-          #dc0916,
-          #f41fd6 100%,
-          #f41fd6 0
-        );
+        background-image:linear-gradient(135deg,rgb(255, 115, 0),white,green);
         border-radius: 1.625rem;
         transition: all 0.4s ease-in-out;
       }
@@ -1243,6 +1238,57 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       display: none;
     }
   }
+  #hands{
+    width: 25rem;
+  }
+  .hands_top{
+
+  }
+  @media screen and (max-width:1400px) {
+    #hands{
+      width: 20rem;
+    }
+    .hands_top{
+      margin-left: 2rem;
+      margin-top: 2rem;
+    }
+  }
+  @media screen and (max-width:1000px) {
+    #hands{
+      width: 15rem;
+    }
+    .hands_top{
+      margin-left: 2rem;
+      margin-top: 2rem;
+    }
+  }
+  @media screen and (max-width:768px) {
+    #hands{
+      width: 10rem;
+    }
+    .hands_top{
+      margin-left: 3rem;
+      margin-top: 2rem;
+    }
+  }
+  @media screen and (max-width:584px) {
+    #hands{
+      width: 10rem;
+    }
+    .hands_top{
+      margin-left: 0rem;
+      margin-top: 2rem;
+    }
+  }
+  @media screen and (max-width:438px) {
+    #hands{
+      width: 7rem;
+    }
+    .hands_top{
+      margin-left: 0rem;
+      margin-top: 2rem;
+    }
+  }
 </style>
 
     <div class="container-fluid" id="container_text">
@@ -1461,6 +1507,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </section>
 
+
+      <div class="position-relative">
+        <div class="position-absolute hands_top">
+          <img id="hands" style="transform: rotate(-45deg);" src="{% static 'republic/decor/hands.png' %}" alt="">
+        </div>
+      </div>
+
       <!-- Contact US Section -->
       <section id="contactus-section" class="">
         <div class="contact-section w-100 px-5 py-3 pt-5">
@@ -1607,7 +1660,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <span class="circle">
                       <span class="icon arrow"></span>
                     </span>
-                    <span class="text-conte">Know More</span>
+                    <span class="text-conte text-dark">Know More</span>
                   </a>
                 </div>
               </div>
@@ -1631,7 +1684,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <span class="circle">
                       <span class="icon arrow"></span>
                     </span>
-                    <span class="text-conte">Know More</span>
+                    <span class="text-conte text-dark">Know More</span>
                   </a>
                 </div>
               </div>
@@ -1655,7 +1708,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <span class="circle">
                       <span class="icon arrow"></span>
                     </span>
-                    <span class="text-conte">Know More</span>
+                    <span class="text-conte text-dark">Know More</span>
                   </a>
                 </div>
               </div>
@@ -1679,7 +1732,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <span class="circle">
                       <span class="icon arrow"></span>
                     </span>
-                    <span class="text-conte">Know More</span>
+                    <span class="text-conte text-dark">Know More</span>
                   </a>
                 </div>
               </div>
@@ -1723,6 +1776,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
       </section>      
       
+      <div class="position-relative">
+        <div class="position-absolute start-50 translate-middle-x mt-1">
+          <img width="120rem" src="{% static 'republic/gif/ashoka_chakra.gif' %}" alt="">
+        </div>
+      </div>
+
       <section id="technology-mainhead">
         <div class="row">
           <div class="col-md-12 d-flex justify-content-center">
@@ -1754,7 +1813,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <span class="circle">
                   <span class="icon arrow"></span>
                 </span>
-                <span class="text-conte">Know More</span>
+                <span class="text-conte text-dark">Know More</span>
               </a>
             </div>
           </div>
@@ -1815,7 +1874,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <span class="circle">
                   <span class="icon arrow"></span>
                 </span>
-                <span class="text-conte">Know More</span>
+                <span class="text-conte text-dark">Know More</span>
               </a>
             </div>
           </div>
@@ -1845,7 +1904,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <span class="circle">
                   <span class="icon arrow"></span>
                 </span>
-                <span class="text-conte">Know More</span>
+                <span class="text-conte text-dark">Know More</span>
               </a>
             </div>
           </div>
@@ -1870,7 +1929,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <span class="circle">
                   <span class="icon arrow"></span>
                 </span>
-                <span class="text-conte">Know More</span>
+                <span class="text-conte text-dark">Know More</span>
               </a>
             </div>
           </div>
@@ -1904,7 +1963,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <span class="circle">
                   <span class="icon arrow"></span>
                 </span>
-                <span class="text-conte">Know More</span>
+                <span class="text-conte text-dark">Know More</span>
               </a>
             </div>
           </div>
@@ -1933,7 +1992,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div> -->
           <div class="img-box-tech">
             <h4 class="hide-head">3D Modeling</h4>
-            <img src="static/img/portfolio/3d.png" alt="3D Modeling" />
+            <img src="static/republic/img/3d.png" alt="3D Modeling" />
           </div>
         </div>
       </section>
@@ -1942,7 +2001,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="content content-left">
           <div class="img-box-tech">
             <h4 class="hide-head">VR/AR</h4>
-            <img src="static/img/team/arvr.jpg" alt="VR/AR" />
+            <img src="static/republic/img/arvr.png" alt="VR/AR" />
           </div>
           <div class="content-box-tech">
             <h4 class="visible-head">VR/AR</h4>
@@ -1963,7 +2022,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <span class="circle">
                   <span class="icon arrow"></span>
                 </span>
-                <span class="text-conte">Know More</span>
+                <span class="text-conte text-dark">Know More</span>
               </a>
             </div>
           </div>
@@ -2032,7 +2091,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="location-details location-first">
               <div class="info row" style="background: transparent;">
                 <div class="address col-md-6 mt-3">
-                  <i class="bi bi-geo-alt" style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-geo-alt me-3" style="background-image:linear-gradient(135deg,rgb(255, 115, 0),white,green); color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Location:</h4>
                   <!-- <p class="mt-2 pb-2" style="color: #fdfcfb;">Kerala Branch</h6> -->
                   <p style="color: rgb(169, 169, 169);"> 1st Floor - Thapasya Building
@@ -2045,13 +2104,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
     
                 <div class="email col-md-6 mt-3">
-                  <i class="bi bi-envelope"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-envelope me-3"  style="background-image:linear-gradient(135deg,rgb(255, 115, 0),white,green); color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Email:</h4>
                   <p style="color: rgb(169, 169, 169);">Info@ altostechnologies.com</p>
                 </div>
     
                 <div class="phone col-md-6 mt-3">
-                  <i class="bi bi-phone"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-phone me-3"  style="background-image:linear-gradient(135deg,rgb(255, 115, 0),white,green); color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Call:</h4>
                   <p style="color: rgb(169, 169, 169);"> +91 90741 56818</p>
                   <!-- <p style="color: rgb(169, 169, 169);">Tamilnadu -  +91 73065 42853</p> -->
@@ -2068,7 +2127,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="location-details">
               <div class="info row d-flex justify-content-end" style="background: transparent;">
                 <div class=" col-md-6 mt-3">
-                  <i class="bi bi-geo-alt" style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-geo-alt me-3" style="background-image:linear-gradient(135deg,rgb(255, 115, 0),white,green); color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Location:</h4>
                   <!-- <p class="mt-2 pb-2" style="color: #fdfcfb;">Kerala Branch</h6>
                   <p style="color: rgb(169, 169, 169);"> 1st Floor - Thapasya Building
@@ -2081,13 +2140,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
     
                 <div class="email col-md-6 mt-3">
-                  <i class="bi bi-envelope"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-envelope me-3"  style="background-image:linear-gradient(135deg,rgb(255, 115, 0),white,green); color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Email:</h4>
                   <p style="color: rgb(169, 169, 169);">Info@ altostechnologies.com</p>
                 </div>
     
                 <div class="phone col-md-6 mt-3">
-                  <i class="bi bi-phone"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-phone me-3"  style="background-image:linear-gradient(135deg,rgb(255, 115, 0),white,green); color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Call:</h4>
                   <!-- <p style="color: rgb(169, 169, 169);">Kerala -  +91 90741 56818</p> -->
                   <p style="color: rgb(169, 169, 169);">  +91 73065 42853</p>

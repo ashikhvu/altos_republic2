@@ -76,6 +76,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   }
 </style>
+
+<style>
+  .top_flag{
+    margin-top: -1.6rem;
+  }
+  @media screen and (max-width:240px) {
+      #footer_decor{
+        width: 5rem;
+      }
+      .footer_decor_top{
+        margin-top: -12.2rem;
+      }
+    }
+    @media screen and (min-width:241px) and (max-width:367px) {
+      #footer_decor{
+        width: 10rem;
+      }
+      .footer_decor_top{
+        margin-top: -15.2rem;
+      }
+    }
+    @media screen and (min-width:368px) and (max-width:429px) {
+      #footer_decor{
+        width: 10rem;
+      }
+      .footer_decor_top{
+        margin-top: -14rem;
+      }
+    }
+    @media screen and (min-width:430px) {
+      #footer_decor{
+        width: 19rem;
+      }
+      .footer_decor_top{
+        margin-top: -21.2rem;
+      }
+    }
+</style>
+
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RLTXDEGMP"></script>
@@ -87,13 +126,32 @@ gtag('js', new Date());
 gtag('config', 'G-3RLTXDEGMP');
 </script>
 <!-- ======= Header ======= -->
-<header id="header" class="fixed-top green-blue">
+<header id="header" class="fixed-top green-blue pb-0" style="padding-top: 1.5rem;background-color: rgba(0, 0, 0, 0.425);">
+
+  <div class="position-relative" style="z-index: 998;">
+    <div class="position-absolute start-0 top-0 top_flag">
+      <div class="d-flex">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+        <img draggable="false" src="{% static 'republic/decor/decor__top2.png' %}" width="500vw" alt="">
+      </div>
+    </div>
+  </div>
 <div class="container d-flex align-items-center justify-content-lg-between">
 
   <h1 class="logo me-auto me-lg-0">
     <a href="{% url 'text_page' %}">
       <!-- <video src="static/img/logo.mp4"></video> -->
-      <img src="{% static 'img/lg1.gif' %}" class="" alt="Logo Gif">
+      <img src="{% static 'republic/gif/lg2.gif' %}" class="" alt="Logo Gif">
       <!-- <img src="static/img/logo-icon.png" class="">
     <span class="first-span">ALTOS Technologies</span>  -->
     </a>
@@ -126,7 +184,7 @@ gtag('config', 'G-3RLTXDEGMP');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=EB+Garamond&family=Heebo:wght@600;700&family=Montserrat&family=Mulish:wght@200&family=Poppins:wght@200;300&family=Raleway:wght@200&family=Work+Sans:wght@200&display=swap');
 
   #navbar .serv {
-    color: #189aa6;
+    color: rgb(255, 128, 10);
     font-weight: 800;
   }
 
@@ -490,8 +548,8 @@ window.addEventListener('resize', handleResize);
         </div>
         <br><br>
 
-        <a role="button" href="#" class="color-button text-white" data-aos="fade-up" data-aos-duration="750">Request Product Demo</a>
-        <a role="button" href="#" class="color-button text-white"  data-aos="fade-up" data-aos-duration="750">Get Started</a>
+        <a role="button" href="#" class="color-button text-dark" data-aos="fade-up" data-aos-duration="750" style="background: linear-gradient(130deg,rgb(255, 85, 0),white,green);color:black">Request Product Demo</a>
+        <a role="button" href="#" class="color-button text-dark"  data-aos="fade-up" data-aos-duration="750" style="background: linear-gradient(130deg,rgb(255, 85, 0),white,green);color:black">Get Started</a>
       </div>
       
       <br><br>
@@ -517,7 +575,7 @@ window.addEventListener('resize', handleResize);
             <div class="col-lg-6 col-sm-12 col-md-6 px-3 mt-5">
               <div class="content-boxs border-0 rounded-4 background_img1">
                 <div class="img-box-tech image-hidden">
-                  <img src="/static/img/team/erp.png" alt="ERP" />
+                  <img src="/static/republic/img/erp.png" alt="ERP" />
                 </div>
                 <p class="text-light" style="font-size: larger; text-align: justify;">
                   Our ALT Whatsapp Module are made of high-quality materials to ensure durability and reliability. 
@@ -527,7 +585,7 @@ window.addEventListener('resize', handleResize);
             </div>
             <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center mt-5">
               <div class="img-box-tech image-visible" style="height: 75%; margin-top: -10vh;">
-                <img src="/static/img/team/erp.png" alt="ERP" />
+                <img src="/static/republic/img/erp.png" alt="ERP" />
               </div>
             </div>
           </div>
@@ -539,13 +597,13 @@ window.addEventListener('resize', handleResize);
           <div class="row  g-3 content-boxs-parent border-0 rounded-4">
             <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center">
               <div class="img-box-tech image-visible" style="height: 75%; margin-top: -10vh;">
-                <img src="/static/img/team/crm.png" alt="CRM" />
+                <img src="/static/republic/img/crm.png" alt="CRM" />
               </div>
             </div>
             <div class="col-lg-6 col-sm-12 col-md-6 px-3">
               <div class="content-boxs border-0 rounded-4">
                 <div class="img-box-tech image-hidden" >
-                  <img src="/static/img/team/crm.png" alt="CRM"/>
+                  <img src="/static/republic/img/crm.png" alt="CRM"/>
                 </div>
                 <p class="text-white" style="font-size: larger; text-align: justify;">
                   We understand the importance of timely delivery of products to our clients. 
@@ -649,16 +707,38 @@ window.addEventListener('resize', handleResize);
           <p class="text-white mb-3" id="price-head"><b>Plan and Pricing</b></p>
           <div class="container" id="sub-content"></div>
           <br><br>
+
           <div class="box-service" style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;" >
+
+            <div class="position-relative">
+              <div class="position-absolute" style="margin-left: -2.2rem;margin-top: -1.4rem;">
+                <img width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_top_left.png' %}" alt="">
+              </div>
+            </div>
+
             <div class="box-contents" style="height: 50%;">
               <h4 style="color:rgb(62, 199, 206)">1</span> </h4>
               <p style="text-align: justify;"> Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. 
                 A great description gets readers in the mood, and makes them more likely to go ahead and book.
               </p>
             </div>
+
+            <div class="position-relative">
+              <div class="position-absolute bottom-0 end-0" style="margin-right: -2.2rem;margin-bottom: -1.4rem;">
+                <img width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_bottom_right.png' %}" alt="">
+              </div>
+            </div>
+
           </div>
 
           <div class="box-service" style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;">
+
+            <div class="position-relative">
+              <div class="position-absolute" style="margin-left: -2.2rem;margin-top: -1.4rem;">
+                <img width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_top_left.png' %}" alt="">
+              </div>
+            </div>
+
             <div class="box-contents" style="height: 50%;">
               <h4 style="color:rgb(62, 199, 206)">2 </span> </h4>
               <p style="text-align: justify;">
@@ -666,9 +746,23 @@ window.addEventListener('resize', handleResize);
                 A great description gets readers in the mood, and makes them more likely to go ahead and book.
               </p>
             </div>
+
+            <div class="position-relative">
+              <div class="position-absolute bottom-0 end-0" style="margin-right: -2.2rem;margin-bottom: -1.4rem;">
+                <img width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_bottom_right.png' %}" alt="">
+              </div>
+            </div>
+
           </div>
 
           <div class="box-service" style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;" >
+
+            <div class="position-relative">
+              <div class="position-absolute" style="margin-left: -2.2rem;margin-top: -1.4rem;">
+                <img width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_top_left.png' %}" alt="">
+              </div>
+            </div>
+
             <div class="box-contents" style="height: 50%;" >
               <h4 style="color:rgb(62, 199, 206)">3</span> </h4>
               <p style="text-align: justify;">
@@ -676,6 +770,13 @@ window.addEventListener('resize', handleResize);
                 A great description gets readers in the mood, and makes them more likely to go ahead and book.
               </p>
             </div>
+
+            <div class="position-relative">
+              <div class="position-absolute bottom-0 end-0" style="margin-right: -2.2rem;margin-bottom: -1.4rem;">
+                <img width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_bottom_right.png' %}" alt="">
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -683,6 +784,60 @@ window.addEventListener('resize', handleResize);
 </div>
 
 <footer id="footer">
+
+  <div class="d-flex" style="overflow: auto;background-color: #151515">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+    <img width="120rem" draggable="false" src="{% static 'republic/decor/ribbon.png' %}" alt="">
+  </div>
+
   <div class="footer-top">
     <div class="container">
       <div class="row">
@@ -769,6 +924,12 @@ window.addEventListener('resize', handleResize);
     </div>
   </div>
 </footer><!-- End Footer -->
+
+<div class="position-relative">
+  <div class="position-absolute end-0 footer_decor_top">
+    <img id="footer_decor" draggable="false" src="{% static 'republic/bg/republic_bg.png' %}" alt="">
+  </div>
+</div>
 
 <!-- <div id="preloader"></div> -->
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i

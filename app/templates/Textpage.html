@@ -401,6 +401,107 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       display: none;
     }
   }
+  #why_chose_us_republic{
+    width: 26rem;
+  }
+  .why_chose_us_republic_top{
+    margin-top: 7rem;
+  }
+  @media screen and (max-width:750px){
+    #why_chose_us_republic{
+      width: 14.5rem;
+    }
+    .why_chose_us_republic_top{
+      margin-top: 4.5rem;
+    }
+  }
+  @media screen and (max-width:550px){
+    #why_chose_us_republic{
+      width: 13.5rem;
+    }
+    .why_chose_us_republic_top{
+      margin-top: 4rem;
+    }
+  }
+  @media screen and (max-width:300px){
+    #why_chose_us_republic{
+      width: 12rem;
+    }
+    .why_chose_us_republic_top{
+      margin-top: 3.8rem;
+    }
+  }
+  .display_why_chose{
+    opacity: 0.5;
+  }
+  @media screen and (max-width:247px){
+    .display_why_chose{
+      visibility: hidden;
+    }
+  }
+  @media screen and (min-width:248px){
+    .display_why_chose{
+      visibility: show;
+    }
+  }
+  #our_technologies{
+    width: 21.2rem;
+  }
+  .our_technologies_top{
+    margin-top: 6.5rem;
+  }
+  @media screen and (min-width:300px)  and (max-width:400px){
+    #our_technologies{
+      width: 18.2rem;
+    }
+    .our_technologies_top{
+      margin-top: 6rem;
+    }
+  }
+  @media screen  and (max-width:299px){
+    #our_technologies{
+      width: 15.2rem;
+    }
+    .our_technologies_top{
+      margin-top: 6rem;
+    }
+  }
+  #check_our_clients_republic{
+    width: 23.3rem;
+  }
+  .check_our_clients_republic_top{
+    margin-top: 5rem;
+  }
+  @media screen  and (max-width:932px){
+    #check_our_clients_republic{
+      width: 18.3rem;
+    }
+    .check_our_clients_republic_top{
+      margin-top: 2.5rem;
+    }
+  }
+  @media screen and (max-width:315px) {
+    #check_our_clients_republic{
+      width: 10.8rem;
+    }
+    .check_our_clients_republic_top{
+      margin-top: 2.5rem;
+    }
+    #display_check_our_client1{
+      visibility: hidden;
+    }
+    #display_check_our_client2{
+      visibility: show;
+    }
+  }
+  @media screen and (min-width:316px) {
+    #display_check_our_client2{
+      visibility: hidden;
+    }
+    #display_check_our_client1{
+      visibility: show;
+    }
+  }
 </style>
 
   </head>
@@ -1218,10 +1319,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
 
+      <div class="position-relative">
+        <div class="position-absolute translate-middle-x start-50 why_chose_us_republic_top">
+          <img id="why_chose_us_republic" draggable="false" src="{% static 'republic/decor/why_choose_us_text_republic.png' %}" alt="">
+        </div>
+      </div>
+
       <section id="why-choose-us">
         <div class="row container">
           <div class="col-12">
-            <h4 style="color: rgb(243, 243, 243)">Why Choose Us</h4>
+            <h4 class="display_why_chose" style="color: rgba(0, 0, 0, 0.413);">Why Choose Us</h4>
             <h3 style="color: #ffff">
               Some Of The Reason For Choosing
               <span style="color: #0fa49b">Our IT Solutions</span>
@@ -1389,11 +1496,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
 
+      <div class="position-relative">
+        <div class="position-absolute start-50 translate-middle-x our_technologies_top">
+          <img id="our_technologies" src="{% static 'republic/decor/our_technologies_text_republic.png' %}" alt="">
+        </div>
+      </div>
+
       <section id="technology-mainhead">
         <div class="row">
           <div class="col-md-12 d-flex justify-content-center">
-            <h1 class="visible-head">
-              Our<span style="color: rgb(39, 112, 141)"> Technologies</span>
+            <h1 style="visibility: hidden;" class="visible-head">
+              Our<span> Technologies</span>
             </h1>
           </div>
         </div>
@@ -1705,10 +1818,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </section> -->
 
+      <div id="display_check_our_client1" class="position-relative">
+        <div class="position-absolute translate-middle-x start-50 check_our_clients_republic_top">
+          <img id="check_our_clients_republic" draggable="false" src="{% static 'republic/decor/check_our_client_text_republic.png' %}" alt="">
+        </div>
+      </div>
+
+      <div id="display_check_our_client2" class="position-relative">
+        <div class="position-absolute translate-middle-x start-50 check_our_clients_republic_top">
+          <img id="check_our_clients_republic" draggable="false" src="{% static 'republic/decor/check_our_text_republic.png' %}" alt="">
+          <div class="text-center mt-2">
+            <img id="check_our_clients_republic" style="width: 7.8rem;" draggable="false" src="{% static 'republic/decor/client_text_republic.png' %}" alt="">
+          </div>
+        </div>
+      </div>
+      
       <section id="client-scroll">
         <div class="section-title">
           <!-- <h1>Clients</h1> -->
-          <p>Check our <span style="color: rgb(39, 112, 141)">Clients</span></p>
+          <p style="visibility: hidden;">Check our <span style="color: rgb(255, 255, 255)">Clients</span></p>
         </div>
         <div class="slider">
           <div class="slide-track-1">

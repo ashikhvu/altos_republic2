@@ -285,6 +285,29 @@
       visibility: visible;
     }
   }
+  #aboutus_text_republic{
+    width: 16.5rem;
+  }
+  .aboutus_text_republic_top{
+    margin-left: -3.5rem;
+  }
+  @media screen and (max-width:832px) {
+    #aboutus_text_republic{
+      width: 16.5rem;
+    }
+    .aboutus_text_republic_top{
+      margin-left: 6rem;
+    }
+  }
+  @media screen and (max-width:767px) {
+    #aboutus_text_republic{
+      width: 16.5rem;
+    }
+    .aboutus_text_republic_top{
+      margin-left: 50%;
+      transform: translate(-50%);
+    }
+  }
 </style>
 
 
@@ -308,7 +331,14 @@
 
             <div class="row">
               <div class="col-lg-5 col-sm-12 col-md-8">
-                <h4>About Us</h4>
+
+                <div id="display_check_our_client1" class="position-relative">
+                  <div class="position-absolute aboutus_text_republic_top">
+                    <img id="aboutus_text_republic" draggable="false" src="{% static 'republic/decor/about_us_text_republic.png' %}" alt="">
+                  </div>
+                </div>
+
+                <h4 style="visibility: hidden;">About Us</h4>
                
 
                  <div class="position-relative">
